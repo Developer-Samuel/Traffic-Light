@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #82d14f, #6aca58, #51c261, #36ba68, #09b16f);
+}
+.container
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.traffic-light
+{
+    position: relative;
+    width: 160px;
+    height: 100%;
+    background: #000;
+    box-shadow: 0 0 8px 0 #000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.traffic-light .light
+{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    opacity: .75;
+}
+.traffic-light .light.active
+{
+    opacity: 1;
+}
+.traffic-light .light.red
+{
+    box-shadow: 0 0 50px 1px #EC2222;
+    background: #EC2222;
+}
+.traffic-light .light.yellow
+{
+    box-shadow: 0 0 50px 1px #E5DC14;
+    background: #E5DC14;
+}
+.traffic-light .light.green
+{
+    box-shadow: 0 0 50px 1px #69D109;
+    background: #69D109;
+}
+
+.segments-list
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 175px;
+    height: 275px;
+    margin: auto 0 auto 35px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.segments-list .display
+{
+    position: relative;
+    width: 175px;
+    height: 100%;
+    background: #000;
+}
+.segments-list .segment
+{
+    position: absolute;
+    border-width: 0;
+    border-color: #555;
+    border-radius: 30px;
+}
+.segments-list .segment.active
+{
+    border-color: #eee;
+}
+.segments-list .segment.a 
+{
+    transform: translateX(-50%);
+    left: 50%;
+    top: 25px;
+    width: calc(100% - 60px);
+    border-top-width: 3px;
+    border-style: solid;
+}
+.segments-list .segment.b
+{
+    right: 25px;
+    top: 30px;
+    border-right-width: 3px;
+    height: 105px;
+    border-style: solid;
+}
+.segments-list .segment.c
+{
+    right: 25px;
+    bottom: 29px;
+    border-right-width: 3px;
+    height: 105px;
+    border-style: solid;
+}
+.segments-list .segment.d 
+{
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 25px;
+    width: calc(100% - 60px);
+    border-top-width: 3px;
+    border-style: solid;
+}
+.segments-list .segment.e
+{
+    left: 25px;
+    bottom: 29px;
+    border-right-width: 3px;
+    height: 105px;
+    border-style: solid;
+}
+.segments-list .segment.f
+{
+    left: 25px;
+    top: 30px;
+    border-right-width: 3px;
+    height: 105px;
+    border-style: solid;
+}
+.segments-list .segment.g 
+{
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: calc(100% - 60px);
+    border-bottom-width: 3px;
+    border-style: solid;
+}
+
+.segments-list .segment.a.active
+{
+    border-top-width: 4px;
+}
+.segments-list .segment.b.active
+{
+    border-right-width: 4px;
+}
+.segments-list .segment.c.active
+{
+    border-right-width: 4px;
+}
+.segments-list .segment.d.active
+{
+    border-top-width: 4px;
+}
+.segments-list .segment.e.active
+{
+    border-right-width: 4px;
+}
+.segments-list .segment.f.active
+{
+    border-right-width: 4px;
+}
+.segments-list .segment.g.active
+{
+    border-bottom-width: 4px;
+}
