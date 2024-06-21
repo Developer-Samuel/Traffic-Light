@@ -11,7 +11,7 @@
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right bottom, #82d14f, #6aca58, #51c261, #36ba68, #09b16f);
+    background: linear-gradient(to right bottom, #21be65, #22ba62, #23b65f, #24b35d, #25af5a);
 }
 .container
 {
@@ -44,7 +44,7 @@
     height: 100px;
     margin: auto;
     border-radius: 50%;
-    opacity: .75;
+    opacity: .65;
 }
 .traffic-light .light.active
 {
